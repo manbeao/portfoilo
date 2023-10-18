@@ -79,6 +79,7 @@ header .gnb a {
     margin: auto;
     justify-content: center;
     z-index: 9999999;
+    text-align: center;
 }
 
 .qick ul {
@@ -231,14 +232,15 @@ header .gnb a {
     justify-content: center;
 }
 
-.about .box1 .one{
+.about .box1 .one {
     width: 20px;
     font-size: 40px;
     font-weight: 900;
     color: #FFA7A7;
     margin: 60px 195px;
 }
-.about .box1 .one+p{
+
+.about .box1 .one+p {
     font-size: 25px;
     font-weight: 900;
     color: #FFF;
@@ -246,7 +248,8 @@ header .gnb a {
     margin-left: 290px;
     font-family: 'Noto Sans KR';
 }
-.about .first{
+
+.about .first {
     font-size: 18px;
     font-weight: 400;
     color: #FFF;
@@ -262,12 +265,14 @@ header .gnb a {
     justify-content: center;
     margin: -203px 35px;
 }
-.about .box2 .two{
+
+.about .box2 .two {
     font-size: 40px;
     font-weight: 900;
     color: #FFA7A7;
 }
-.about .box2 .two+p{
+
+.about .box2 .two+p {
     font-size: 25px;
     font-weight: 900;
     color: #FFF;
@@ -275,7 +280,8 @@ header .gnb a {
     margin-left: 45px;
     font-family: 'Noto Sans KR';
 }
-.about .second{
+
+.about .second {
     font-size: 18px;
     font-weight: 400;
     color: #FFF;
@@ -284,6 +290,7 @@ header .gnb a {
     font-family: 'Noto Sans KR';
 
 }
+
 .about .box3 {
     width: 100%;
     display: flex;
@@ -291,14 +298,16 @@ header .gnb a {
     justify-content: center;
     margin-left: 550px;
 }
-.about .box3 .three{
+
+.about .box3 .three {
     font-size: 40px;
     font-weight: 900;
     color: #FFA7A7;
     margin-top: -39px;
-    
+
 }
-.about .box3 .three+p{
+
+.about .box3 .three+p {
     width: 100px;
     font-size: 25px;
     font-weight: 900;
@@ -307,7 +316,8 @@ header .gnb a {
     margin-left: 45px;
     font-family: 'Noto Sans KR';
 }
-.about .third{
+
+.about .third {
     font-size: 18px;
     font-weight: 400;
     color: #FFF;
@@ -317,6 +327,7 @@ header .gnb a {
 
 
 }
+
 .about .first {
     display: inline-flex;
     flex-direction: column;
@@ -338,7 +349,8 @@ header .gnb a {
     align-items: start;
     row-gap: 22px;
 }
-.bg1{
+
+.bg1 {
     width: 100vw;
     background-color: var(--primary);
 }
@@ -346,21 +358,23 @@ header .gnb a {
 
 
 /* skill */
-.skill{
+.skill {
     width: 100%;
     height: 900px;
     background: var(--text3);
     margin: auto;
     color: #fff;
 }
-.skill>h2{
+
+.skill>h2 {
     font-size: 40px;
     text-align: center;
     color: #E3E3E3;
     font-weight: 900;
     margin-top: 150px;
 }
-.skill>p{
+
+.skill>p {
     font-size: 25px;
     color: #C7C7C7;
     text-align: center;
@@ -368,7 +382,7 @@ header .gnb a {
     padding-left: 5px;
 }
 
-.skill .sk_box{
+.skill .sk_box {
     display: flex;
     width: 1100px;
     justify-content: space-between;
@@ -377,17 +391,20 @@ header .gnb a {
     padding: 20px;
 
 }
-.skill .sk_box h2{
+
+.skill .sk_box h2 {
     font-size: 60px;
     font-weight: 900;
 }
-.skill .sk_box p{
+
+.skill .sk_box p {
     font-size: 18px;
     font-weight: 200;
     text-align: center;
     margin-top: 10px;
 }
-.skill .sk_box span{
+
+.skill .sk_box span {
     font-size: 15px;
     font-weight: 100;
     text-align: center;
@@ -395,7 +412,7 @@ header .gnb a {
     margin-left: 12px;
 }
 
-.skill .sk_btn{
+.skill .sk_btn {
     width: 250px;
     height: 50px;
     line-height: 50px;
@@ -405,32 +422,123 @@ header .gnb a {
     border-radius: 50px;
     transition: all 0.7s;
 }
-.skill .sk_btn:hover{
+
+.skill .sk_btn:hover {
     background-color: #fff;
 }
-.skill .sk_btn:hover p{
+
+.skill .sk_btn:hover p {
     color: var(--secondary);
 }
-.skill .sk_btn p{
+
+.skill .sk_btn p {
     text-align: center;
     color: #fff;
 }
 
-.bg2{
+.bg2 {
     width: 100vw;
     background-color: var(--text3);
 }
 
 
 /* project1*/
-.bg3{
+.bg3 {
     width: 100vw;
     background-color: #fff;
+    height: 1000px;
 }
-.project1{
+
+.project1 {
     width: 100%;
-    height: 900px;
     background: #fff;
     margin: auto;
     color: var(--text1);
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.project1 h2 {
+    font-size: 300px;
+    font-weight: 900;
+    color: #FFCACA;
+    margin-left: 50px;
+}
+
+.project1 h3 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: -160px;
+    margin-left: 190px;
+}
+
+.project1 p {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 190px;
+    font-weight: 700;
+}
+
+.project1 .pj_box1 {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-left: 190px;
+}
+
+.project1 .pj_box1 span.b {
+    font-weight: 700;
+}
+
+.project1 .pj_box1 span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project1 .pj1_btn {
+    width: 280px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 190px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+}
+
+.project1 .pj1_btn>div {
+    margin-bottom: 15px;
+}
+
+.pj1_btn1 a,
+.pj1_btn2 a,
+.pj1_btn3 a{
+    padding: 10px 60px;
+    background-color: var(--secondary);
+    height: 100%;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    color: #FFF;
+    transition: all 0.7s;
+
+}
+
+.pj1_btn1 a:hover,
+.pj1_btn2 a:hover,
+.pj1_btn3 a:hover {
+    background-color: var(--primary);
+    color: #b35656;
+}
+
+
+
+.project1 .pj1_img {
+    margin-top: -650px;
+    margin-left: 500px;
+    transition: all 0.7s;
+
+}
+
+.project1 .pj1_img img {
+    width: 1200px;
 }
