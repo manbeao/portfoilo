@@ -818,6 +818,17 @@ header .gnb a {
     width: 1200px;
 }
 
+/* parallax */
+
+/* .left_box{
+    transform: translateX(-300%);
+}
+.right_box{
+    transform: translateX(300%);
+}
+ */
+
+
 
 /* banner */
 .bg5 {
@@ -1019,7 +1030,7 @@ header .gnb a {
     height: 430px;
     background-color: #fff;
     border-radius: 20px;
-    filter: drop-shadow(0px 3.6646814346313477px 7.329362869262695px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 3.6px 7.3px rgba(0, 0, 0, 0.25));
     margin: auto;
     margin-top: 100px;
     opacity: .7;
@@ -1034,16 +1045,22 @@ header .gnb a {
 .ct_box1:hover {
     transform: scale(110%);
     opacity: 1;
+    background-color: rgb(255, 211, 211);
+    filter: drop-shadow(0px 3.6px 7.3px rgba(0, 0, 0, 0.5));
 }
 
 .ct_box2:hover {
     transform: scale(110%);
     opacity: 1;
+    background-color: rgb(255, 211, 211);
+    filter: drop-shadow(0px 3.6px 7.3px rgba(0, 0, 0, 0.5));
 }
 
 .ct_box3:hover {
     transform: scale(110%);
     opacity: 1;
+    background-color: rgb(255, 211, 211);
+    filter: drop-shadow(0px 3.6px 7.3px rgba(0, 0, 0, 0.5));
 }
 
 .ct_box2 {
