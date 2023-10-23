@@ -7,6 +7,9 @@
     <title>이은서 포트폴리오</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+   <script src="01.js"></script>
+
 </head>
 
 <body>
@@ -51,9 +54,9 @@
                         <img src="./image/Call.png" alt="lang">
                         <span>Call</span>
                     </a></li>
-                <li><a href="#help">
-                        <img src="./image/Help.png" alt="search">
-                        <span>Help</span>
+                <li><a href="#top">
+                        <img src="./image/Top.png" alt="top">
+                        <span>Top</span>
                     </a></li>
             </ul>
         </div>
@@ -113,7 +116,7 @@
         </div>
         <div class="bg2">
             <div class="container2">
-                <div class="skill">
+                <div class="skill" id="skill">
                     <h2>SKILLS</h2>
                     <p>as a designer</p>
                     <div class="sk_box">
@@ -161,14 +164,16 @@
                         </div>
                     </div>
                     <div class="sk_btn">
-                        <p>More details</p>
+                        <a href="#">
+                            <p>More details</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="bg3">
-            <div class="container2">
-                <div class="project1">
+            <div class="container2" id="project">
+                <div class="project1" id="pj1 ">
                     <h2>PR</h2>
                     <h3>PROJECT 1</h3>
                     <p>기획부터 디자인, 구현까지<br>
@@ -194,7 +199,7 @@
         </div>
         <div class="bg4">
             <div class="container2">
-                <div class="project2">
+                <div class="project2" id="pj2">
                     <h2>PR</h2>
                     <h3>PROJECT 2</h3>
                     <p>기획부터 디자인, 구현까지<br>
@@ -222,22 +227,35 @@
             <div class="box01">
                 <h2>01</h2>
                 <div class="pj1">
-                    <h3>Project 1</h3>
-                    <p>국립현대미술관 리디자인</p>
+                    <a href="#pj1">
+                        <h3>Project 1</h3>
+                    </a>
+                    <a href="#pj1">
+                        <p>국립현대미술관 리디자인</p>
+                    </a>
+
                 </div>
             </div>
             <div class="box02">
                 <h2>02</h2>
                 <div class="pj2">
-                    <h3>Project 2</h3>
-                    <p>VANS 웹사이트 구현</p>
+                    <a href="#pj2">
+                        <h3>Project 2</h3>
+                    </a>
+                    <a href="#pj2">
+                        <p>VANS 웹사이트 구현</p>
+                    </a>
                 </div>
             </div>
             <div class="box03">
                 <h2>03</h2>
                 <div class="pj3">
-                    <h3>Project 3</h3>
-                    <p>DOLCE&GABBANA 구현</p>
+                    <a href="#pj3">
+                        <h3>Project 3</h3>
+                    </a>
+                    <a href="#pj3">
+                        <p>DOLCE&GABBANA 구현</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -246,7 +264,7 @@
         <div class="bg6"></div>
         <div class="bg7">
             <div class="container2">
-                <div class="project3">
+                <div class="project3" id="pj3">
                     <h2>PR</h2>
                     <h3>PROJECT 3</h3>
                     <p>기획부터 디자인, 구현까지<br>
@@ -270,8 +288,72 @@
                 </div>
             </div>
         </div>
-
-
+        <div class="bg8">
+            <div class="container2" id="contact">
+                <h2>CONTACT ME</h2>
+                <span>& let me help you</span>
+                <div class="ct_box1">
+                    <img src="./image/contact1.png" alt="">
+                    <h3>Planning</h3>
+                    <p>기획자로서의 어쩌구<br>
+                        기획자로서의 어쩌구<br>
+                        기획자로서의 어쩌구</p>
+                </div>
+                <div class="ct_box2">
+                    <img src="./image/contact2.png" alt="" srcset="">
+                    <h3>Illustration</h3>
+                    <p>기획자로서의 어쩌구<br>
+                        기획자로서의 어쩌구<br>
+                        기획자로서의 어쩌구</p>
+                </div>
+                <div class="ct_box3">
+                    <img src="./image/contact3.png" alt="">
+                    <h3>Web Design</h3>
+                    <p>기획자로서의 어쩌구<br>
+                        기획자로서의 어쩌구<br>
+                        기획자로서의 어쩌구</p>
+                </div>
+                <div class="ct_btn">
+                    <p><a href="#">More details</a></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="bg9">
+                <div class="container2">
+                    <div class="footerbox">
+                        <img src="./image/f_logo.png" alt="">
+                        <div class="f_box1">
+                            <h2>Start a conversation</h2>
+                            <p>e-mail : lesles0906@naver.com</p>
+                            <p>phone : 010.5375.8297</p>
+                        </div>
+                        <div class="f_box2">
+                            <h2>Social</h2>
+                            <p>Contact Me</p>
+                            <div class="img_box">
+                                <img src="./image/f_Twitter.png" alt="">
+                                <img src="./image/f_Instagram.png" alt="">
+                                <img src="./image/f_Facebook.png" alt="">
+                                <img src="./image/f_LINE.png" alt="">
+                            </div>
+                        </div>
+                        <div class="f_box3">
+                            <h2>Latest projects</h2>
+                            <p>2023.10.17</p>
+                            <img src="./image/last.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg10">
+                <div class="container2">
+                    <div class="bg10_box">
+                        <p>Follow Me</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 </body>
