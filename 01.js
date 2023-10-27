@@ -5,11 +5,46 @@
 //        $('.hover img').css({top:(y/5),left:(x/2)});
 //     });
 
+
+
+
+
 // ---------------------------------------------------
+/* skill */
+$(function () {
+	var sboxs = $('.s_boxs');
+	var animationOst = $('.animation').offset().top - 600;
+	var isAni = false;
+	$(window).scroll(function () {
+		if ($(window).scrollTop() >= animationOst && !isAni) {
+			progressAnimation();
+		}
+	});
+
+	function progressAnimation() {
+		sboxs.each(function () {
+			var $this = $(this),
+				progressText = $this.find('.rate')
+			// console.log(progressText);
+		});
+	}
+});
 
 
-    // ----------------------------------------------
 
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------
+/* slide */
 
 
     const win = $(window);
@@ -28,7 +63,7 @@
         });
     });
     
-
+// ---------------------------------------------
 
 
 
