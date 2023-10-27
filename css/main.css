@@ -1033,14 +1033,32 @@ header .gnb a {
     width: 1200px;
 }
 
+
+
+
+
+
 /* parallax */
 
-/* .left_box{
-    transform: translateX(-300%);
+.left_box{
+    transform: translateX(-3000%);
 }
 .right_box{
-    transform: translateX(300%);
-} */
+    transform: translateX(3000%);
+}
+.boxs{
+    transition: transform 2s;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
