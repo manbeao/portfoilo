@@ -10,6 +10,27 @@ body {
 
 
 
+/* scroll bar */
+body::-webkit-scrollbar{
+    width: 1.5em;
+    background-color: var(--background);
+}
+body::-webkit-scrollbar-thumb{
+    height: 5em;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-button{
+    width: 3em;
+    height: 2em;
+    background-color: #fff;
+}
+
+
+
+
+
+
 /* header */
 .container {
     display: flex;
@@ -39,16 +60,16 @@ header .logo img {
 
 @keyframes logoani {
     0% {
-        transform:scale(100%);
+        transform: scale(100%);
     }
-   
+
     50% {
-        transform:scale(50%);
+        transform: scale(50%);
     }
-   
+
 
     100% {
-        transform:scale(100%);
+        transform: scale(100%);
     }
 }
 
@@ -69,6 +90,98 @@ header .gnb li a:hover {
     color: var(--secondary);
 }
 
+header .gnb li:first-child a:hover::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 30px;
+    border-radius: 50px;
+    justify-content: center;
+    margin-left: 5px;
+    animation: lineani 1s ease-in-out;
+}
+
+header .gnb li:nth-child(2) a:hover::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 30px;
+    border-radius: 50px;
+    justify-content: center;
+    margin-left: 7px;
+    animation: lineani2 1s ease-in-out;
+}
+
+header .gnb li:nth-child(3) a:hover::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 30px;
+    border-radius: 50px;
+    justify-content: center;
+    margin-left: 5px;
+    animation: lineani3 1s ease-in-out;
+}
+
+header .gnb li:nth-child(4) a:hover::before {
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 30px;
+    border-radius: 50px;
+    justify-content: center;
+    margin-left: 10px;
+    animation: lineani4 1s ease-in-out;
+}
+
+@keyframes lineani {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50px;
+    }
+}
+
+@keyframes lineani2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40px;
+    }
+}
+
+@keyframes lineani3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60px;
+    }
+}
+
+@keyframes lineani4 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65px;
+    }
+}
+
 header .gnb li {
     height: 30px;
 }
@@ -76,6 +189,51 @@ header .gnb li {
 header .gnb li img {
     width: 30px;
     margin-top: -10%;
+}
+
+header .gnb #facebook a:hover::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--secondary);
+    margin-top: 35px;
+    margin-left: 12px;
+    animation: circleani 1.5s ease-in-out infinite;
+}
+header .gnb #twitter a:hover::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--secondary);
+    margin-top: 35px;
+    margin-left: 12px;
+    animation: circleani 1.5s ease-in-out infinite;
+}
+header .gnb #search a:hover::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--secondary);
+    margin-top: 35px;
+    margin-left: 12px;
+    animation: circleani 1.5s ease-in-out infinite;
+}
+@keyframes circleani {
+    0% {
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(0%);
+    }
+    100% {
+        transform: scale(100%);
+    }
 }
 
 header .gnb a {
@@ -110,10 +268,11 @@ header .gnb a {
     width: 100%;
     align-items: center;
     margin-bottom: 8px;
-    transition: all 0.7s;
+    transition: all 1s;
     position: relative;
 
 }
+
 .qick ul li:nth-child(1):hover:before {
     content: 'lesles0906@naver.com';
     text-align: center;
@@ -121,18 +280,19 @@ header .gnb a {
     top: -10px;
     left: -220px;
     width: 150px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 35px;
     color: var(--secondary);
     animation: qick 0.5s ease-in;
 }
+
 @keyframes qick {
-    0%{
+    0% {
         width: 0px;
         overflow: hidden;
     }
 
-    100%{
+    100% {
         width: -100%;
         overflow: visible;
     }
@@ -145,7 +305,7 @@ header .gnb a {
     top: -6px;
     left: -220px;
     width: 150px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 35px;
     color: var(--secondary);
     animation: qick 0.5s ease-in;
@@ -156,10 +316,11 @@ header .gnb a {
 .qick ul li a {
     display: block;
     color: #D8D8D8;
+    transition: all 1s;
 }
 
 .qick ul li:hover a {
-    color: #ababab;
+    color: #777;
 }
 
 .qick ul li span {
@@ -233,15 +394,17 @@ header .gnb a {
     left: 320px;
     animation: imgani 2s infinite;
 }
+
 @keyframes imgani {
-    0%{
+    0% {
         transform: scale(100%);
     }
-    50%{
+
+    50% {
         transform: scale(60%);
     }
 
-    100%{
+    100% {
         transform: scale(100%);
     }
 }
@@ -732,15 +895,17 @@ header .gnb a {
 
 }
 
-.pj2_btn1 a:hover{
+.pj2_btn1 a:hover {
     background-color: var(--primary);
     color: #b35656;
 }
-.pj2_btn2 a:hover{
+
+.pj2_btn2 a:hover {
     background-color: var(--primary);
     color: #b35656;
 }
-.pj2_btn3 a:hover{
+
+.pj2_btn3 a:hover {
     background-color: var(--primary);
     color: #b35656;
 }
@@ -933,7 +1098,7 @@ header .gnb a {
 }
 
 .box01 .pj1:hover {
-    transform:scale(120%);
+    transform: scale(120%);
 }
 
 
@@ -951,7 +1116,7 @@ header .gnb a {
     margin-left: 260px;
     font-weight: 300;
     color: #FFDFDF;
-    
+
 }
 
 .box02 {
@@ -980,7 +1145,7 @@ header .gnb a {
 }
 
 .box02 .pj2:hover {
-    transform:scale(120%);
+    transform: scale(120%);
 }
 
 .box02 h3 {
@@ -1025,7 +1190,7 @@ header .gnb a {
 }
 
 .box03 .pj3:hover {
-    transform:scale(120%);
+    transform: scale(120%);
 }
 
 .box03 h3 {
@@ -1099,7 +1264,8 @@ header .gnb a {
     opacity: 1;
     filter: drop-shadow(0px 3.6px 7.3px rgba(0, 0, 0, 0.5));
 }
-.ct_box1:hover::before{
+
+.ct_box1:hover::before {
     position: absolute;
     content: '';
     width: 300px;
@@ -1109,12 +1275,14 @@ header .gnb a {
     bottom: 0;
     margin-left: 50px;
 }
+
 .ct_box2:hover {
-    transform:scale(110%);
+    transform: scale(110%);
     opacity: 1;
     filter: drop-shadow(0px 3.6px 7.3px rgba(0, 0, 0, 0.5));
 }
-.ct_box2:hover::before{
+
+.ct_box2:hover::before {
     position: absolute;
     content: '';
     width: 300px;
@@ -1124,12 +1292,14 @@ header .gnb a {
     bottom: 0;
     margin-left: 50px;
 }
+
 .ct_box3:hover {
-    transform:scale(110%);
+    transform: scale(110%);
     opacity: 1;
     filter: drop-shadow(0px 3.6px 7.3px rgba(0, 0, 0, 0.5));
 }
-.ct_box3:hover::before{
+
+.ct_box3:hover::before {
     position: absolute;
     content: '';
     width: 300px;
@@ -1139,6 +1309,7 @@ header .gnb a {
     bottom: 0;
     margin-left: 50px;
 }
+
 .ct_box2 {
     margin-top: -430px;
     transition: all 0.7s;
@@ -1301,7 +1472,8 @@ header .gnb a {
     margin-top: -22px;
     transition: all 0.7s;
 }
-.f_box3 .footer_btn:hover{
+
+.f_box3 .footer_btn:hover {
     background-color: var(--primary);
 }
 
@@ -1327,14 +1499,17 @@ header .gnb a {
     margin-top: 15px;
     animation: infinite scale 2s ease-in-out;
 }
+
 @keyframes scale {
-    0%{
+    0% {
         transform: scale(100%);
     }
-    50%{
+
+    50% {
         transform: scale(80%);
     }
-    100%{
+
+    100% {
         transform: scale(100%);
     }
 }
