@@ -5,7 +5,7 @@ $('.container1').on('mousemove',function(e){
        $('.hover img').css({top:(y/5),left:(x/2)});
     });
 
-
+// ---------------------------------------------------
 
     var skill = $('.skill');
     var skbox = $('.sk_box');
@@ -43,6 +43,12 @@ $('.container1').on('mousemove',function(e){
             );
         }); //chart each
     }
+
+
+
+    // ----------------------------------------------
+
+
 
 
 

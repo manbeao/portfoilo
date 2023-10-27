@@ -124,8 +124,20 @@ header .gnb a {
     background-color: rgba(255,255,255,0.8);
     padding: 35px;
     color: var(--secondary);
-
+    animation: qick 0.5s ease-in;
 }
+@keyframes qick {
+    0%{
+        width: 0px;
+        overflow: hidden;
+    }
+
+    100%{
+        width: -100%;
+        overflow: visible;
+    }
+}
+
 .qick ul li:nth-child(2):hover:before {
     content: '010.5375.8297';
     text-align: center;
@@ -136,6 +148,7 @@ header .gnb a {
     background-color: rgba(255,255,255,0.8);
     padding: 35px;
     color: var(--secondary);
+    animation: qick 0.5s ease-in;
 
 }
 
@@ -560,6 +573,7 @@ header .gnb a {
     margin-top: 10px;
     margin-left: 190px;
     font-weight: 700;
+    font-family: 'Noto Sans KR';
 }
 
 .project1 .pj_box1 {
@@ -570,11 +584,14 @@ header .gnb a {
 
 .project1 .pj_box1 span.b {
     font-weight: 700;
+    font-family: 'Noto Sans KR';
 }
 
 .project1 .pj_box1 span {
     display: block;
     margin-bottom: 10px;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
 }
 
 .project1 .pj1_btn {
@@ -602,6 +619,7 @@ header .gnb a {
     margin-bottom: 15px;
     color: #FFF;
     transition: all 0.7s;
+    font-family: 'Noto Sans KR';
 
 }
 
@@ -662,6 +680,7 @@ header .gnb a {
     margin-top: 10px;
     margin-right: 180px;
     font-weight: 700;
+    font-family: 'Noto Sans KR';
 
 }
 
@@ -674,11 +693,14 @@ header .gnb a {
 
 .project2 .pj_box2 span.b {
     font-weight: 700;
+    font-family: 'Noto Sans KR';
 }
 
 .project2 .pj_box2 span {
     display: block;
     margin-bottom: 10px;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
 }
 
 .project2 .pj2_btn {
@@ -706,6 +728,7 @@ header .gnb a {
     margin-bottom: 15px;
     color: #FFF;
     transition: all 0.7s;
+    font-family: 'Noto Sans KR';
 
 }
 
@@ -774,6 +797,7 @@ header .gnb a {
     margin-top: 10px;
     margin-left: 190px;
     font-weight: 700;
+    font-family: 'Noto Sans KR';
 }
 
 .project3 .pj_box3 {
@@ -784,11 +808,14 @@ header .gnb a {
 
 .project3 .pj_box3 span.b {
     font-weight: 700;
+    font-family: 'Noto Sans KR';
 }
 
 .project3 .pj_box3 span {
     display: block;
     margin-bottom: 10px;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
 }
 
 .project3 .pj3_btn {
@@ -816,6 +843,8 @@ header .gnb a {
     margin-bottom: 15px;
     color: #FFF;
     transition: all 0.7s;
+    font-family: 'Noto Sans KR';
+
 
 }
 
@@ -922,6 +951,7 @@ header .gnb a {
     margin-left: 260px;
     font-weight: 300;
     color: #FFDFDF;
+    
 }
 
 .box02 {
