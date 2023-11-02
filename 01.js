@@ -1,9 +1,9 @@
-// $('.container1').on('mousemove',function(e){
-//         console.log(e);
-//         let x=-e.clientX;
-//         let y=-e.clientY;
-//        $('.hover img').css({top:(y/5),left:(x/2)});
-//     });
+$('.home').on('mousemove', function (e) {
+	console.log(e);
+	let x = e.pageX - 15 + "px";
+	let y = e.pageY - 15 + "px";
+	$('.cusor').css({ left: + x, top: + y });
+});
 
 
 
@@ -11,43 +11,43 @@
 
 // ---------------------------------------------------
 /* skill */
-$(function () {
-	var sboxs = $('.s_boxs');
-	var animationOst = $('.animation').offset().top - 600;
-	var isAni = false;
-	$(window).scroll(function () {
-		if ($(window).scrollTop() >= animationOst && !isAni) {
-			progressAnimation();
-		}
-	});
+// $(function () {
+// 	var sboxs = $('.s_boxs');
+// 	var animationOst = $('.animation').offset().top - 600;
+// 	var isAni = false;
+// 	$(window).scroll(function () {
+// 		if ($(window).scrollTop() >= animationOst && !isAni) {
+// 			progressAnimation();
+// 		}
+// 	});
 
-	function progressAnimation() {
-		sboxs.each(function () {
-			var $this = $(this),
-				progressText = $this.find('.rate'),
-				progressRate = progressText.attr('data-rate');
-			progressBar.animate({ width: progressRate + '%' }, 2500);
-			// console.log(progressText);
-			var text = function () {
-				$({ rate: 0 }).animate(
-					{ rate: progressRate },
-					{
-						duration: 2000,
-						progress: function () {
-							var now = this.rate;
-							console.log(now);
-							progressText.text(Math.floor(now) + '%');
-						},
-						complete: function () {
-							isAni = true;
-						},
-					}
-				);
-			};
-			text();
-		});
-	}
-});
+// 	function progressAnimation() {
+// 		sboxs.each(function () {
+// 			var $this = $(this),
+// 				progressText = $this.find('.rate'),
+// 				progressRate = progressText.attr('data-rate');
+// 			progressBar.animate({ width: progressRate + '%' }, 2500);
+// 			// console.log(progressText);
+// 			var text = function () {
+// 				$({ rate: 0 }).animate(
+// 					{ rate: progressRate },
+// 					{
+// 						duration: 2000,
+// 						progress: function () {
+// 							var now = this.rate;
+// 							console.log(now);
+// 							progressText.text(Math.floor(now) + '%');
+// 						},
+// 						complete: function () {
+// 							isAni = true;
+// 						},
+// 					}
+// 				);
+// 			};
+// 			text();
+// 		});
+// 	}
+// });
 
 
 
@@ -66,22 +66,22 @@ $(function () {
 /* slide */
 
 
-    const win = $(window);
-    const speed = win.height() * 0.9;
-    const project = $('.project');
-    win.on('scroll', function () {
-        let winSCT = win.scrollTop() + speed;
-        project.each(function (i, o) {
-        const tg=$(this);
-        const tgtop=tg.offset().top;
-        //console.log(tg.offset().top);
-        if(winSCT>tgtop){
-          tg.find('.left_box').css('transform','translateX(0%)');
-          tg.find('.right_box').css('transform','translateX(0%)').delay(5000);
-        }
-        });
-    });
-    
+const win = $(window);
+const speed = win.height() * 0.9;
+const project = $('.project');
+win.on('scroll', function () {
+	let winSCT = win.scrollTop() + speed;
+	project.each(function (i, o) {
+		const tg = $(this);
+		const tgtop = tg.offset().top;
+		//console.log(tg.offset().top);
+		if (winSCT > tgtop) {
+			tg.find('.left_box').css('transform', 'translateX(0%)');
+			tg.find('.right_box').css('transform', 'translateX(0%)').delay(5000);
+		}
+	});
+});
+
 // ---------------------------------------------
 
 
