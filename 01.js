@@ -24,8 +24,27 @@ $(function () {
 	function progressAnimation() {
 		sboxs.each(function () {
 			var $this = $(this),
-				progressText = $this.find('.rate')
+				progressText = $this.find('.rate'),
+				progressRate = progressText.attr('data-rate');
+			progressBar.animate({ width: progressRate + '%' }, 2500);
 			// console.log(progressText);
+			var text = function () {
+				$({ rate: 0 }).animate(
+					{ rate: progressRate },
+					{
+						duration: 2000,
+						progress: function () {
+							var now = this.rate;
+							console.log(now);
+							progressText.text(Math.floor(now) + '%');
+						},
+						complete: function () {
+							isAni = true;
+						},
+					}
+				);
+			};
+			text();
 		});
 	}
 });

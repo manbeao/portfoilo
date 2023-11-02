@@ -1,0 +1,33 @@
+.transform_container{
+    width: 200px;
+    margin: 200px auto;
+}
+.img{
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 50%;
+    box-shadow: 5px 5px 63px 2px #000040;
+    animation: rotateAni 2.5s infinite;
+    animation-play-state: paused;
+    animation-fill-mode:forwards ;
+}
+.img img{
+    width: 100%;
+}
+@keyframes rotateAni {
+    form{
+        transform: perspective(200px)
+        rotateY(0deg);
+    }
+    50%{
+        transform: perspective(200px)
+        rotateY(-180deg);
+    }
+    to{
+        transform: perspective(200px)
+        rotateY(360deg);
+    }
+}
+.img:hover{
+    animation-play-state: running;
+}
