@@ -1476,18 +1476,24 @@ header .gnb a {
 }
 
 .ct_box1 p {
+    font-family: "Noto sans KR";
+    font-weight: 500;
     text-align: center;
     margin-top: 20px;
     line-height: 1.2;
 }
 
 .ct_box2 p {
+    font-family: "Noto sans KR";
+    font-weight: 500;
     text-align: center;
     margin-top: 20px;
     line-height: 1.2;
 }
 
 .ct_box3 p {
+    font-family: "Noto sans KR";
+    font-weight: 500;
     text-align: center;
     margin-top: 20px;
     line-height: 1.2;
@@ -1505,6 +1511,7 @@ header .gnb a {
 }
 
 #contact .ct_btn p {
+    
     text-align: center;
     font-size: 16px;
 }
