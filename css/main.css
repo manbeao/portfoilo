@@ -63,23 +63,23 @@ header .logo img {
 
 @keyframes logoani {
     0% {
-        transform: scale(100%);
+        transform: scale(110%);
     }
 
     50% {
-        transform: scale(50%);
+        transform: scale(80%);
     }
 
 
     100% {
-        transform: scale(100%);
+        transform: scale(110%);
     }
 }
 
 
 header .logo img {
-    width: 180px;
-    margin: 7.5px 0;
+    width: 230px;
+    margin: 19.5px 0;
 }
 
 header .gnb {
@@ -447,10 +447,9 @@ header .gnb a {
 .home h1 {
     position: absolute;
     font-size: 50px;
-    font-family: 'Noto Sans KR';
-    font-weight: 1000;
+    font-family: 'JalnanGothic';
     top: 340px;
-    left: 250px;
+    left: 230px;
     color: var(--text1);
     z-index: 3;
 }
